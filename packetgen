@@ -21,7 +21,7 @@ function install_dependencies {
 
 # install_vpp() - Install VPP
 function install_vpp {
-    local RELEASE=".stable.1609"
+    local RELEASE=".stable.1804"
 
     apt-get update
     apt-get install -y -qq apt-transport-https
