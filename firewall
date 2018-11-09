@@ -16,12 +16,12 @@ set -o errexit
 # install_dependencies() - Install required dependencies
 function install_dependencies {
     apt-get update
-    apt-get install -y -qq wget openjdk-8-jre bridge-utils net-tools bsdmainutils make gcc libcurl4-gnutls-dev
+    apt-get install -y -qq wget openjdk-8-jre bridge-utils net-tools bsdmainutils make gcc libcurl4-gnutls-dev iproute2
 }
 
 # install_vpp() - Install VPP
 function install_vpp {
-    local RELEASE=".stable.1609"
+    local RELEASE=".stable.1804"
 
     apt-get update
     apt-get install -y -qq apt-transport-https
